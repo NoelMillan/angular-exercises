@@ -1,0 +1,23 @@
+.container{
+    margin-bottom: 2.63em;
+}
+.container:first-child{
+    margin-top: 1.3em;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    margin-top: -0.5rem;
+}
+.col-1{
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 50%;
+}
+.col {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0.5rem;
+}

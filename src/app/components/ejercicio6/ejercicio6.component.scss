@@ -1,0 +1,52 @@
+.button{
+    height: 34px;
+}
+.field{
+    margin-top: 2em;
+}
+.field:last-child{
+    margin-bottom: 2em;
+}
+.container{
+    margin-top: 0;
+}
+.item-center{
+    text-align: center !important;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+}
+.col-1{
+    width: 25%;
+    padding-left: 1rem;
+    padding-right: 0.7rem;
+    padding-top: 0.8rem;
+}
+.col-1__1{
+    flex: 0 0 auto;
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+.lol{
+    justify-content: center;
+}
+.col-2{
+    width: 75%;
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.col-3{
+    width: 25%;
+    flex: 0 0 auto;
+    margin-bottom: .5rem;
+}
+.grid:nth-child(2){
+    margin-bottom: 1.2rem;
+}

@@ -1,1 +1,17 @@
-<p>ejercicio5 works!</p>
+<div class="grid">
+    <div class="col-1">
+        <div class="container">
+            <p-chart type="bar" [data]="dataSource" height="400px"></p-chart>
+        </div>
+    </div>
+    <div class="col">
+        <div class="container">
+            <p-chart type="doughnut" [data]="employeeOrgData" height="400px"></p-chart>
+        </div>
+    </div>
+    <div class="col">
+    <div class="container">
+        <p-chart type="radar" [data]="actionOrgData" height="400px"></p-chart>
+    </div>
+    </div>
+</div>

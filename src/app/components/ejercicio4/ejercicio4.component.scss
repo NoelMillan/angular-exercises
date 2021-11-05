@@ -1,0 +1,29 @@
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    margin-top: -0.5rem;
+}
+.card__img{
+    width: 100%;
+}
+.col-3{
+    width: 25%;
+    padding: 0.5rem
+}
+.col-9{
+    width: 75%;
+    padding: 0.5rem
+}
+.col-4{
+    width: 66.6667%;
+    padding: 0.5rem;
+}
+.col-12{
+    width: 33.3333%;
+    padding: 0.5rem;
+}
+.container{
+    padding-bottom: 1rem;
+}
