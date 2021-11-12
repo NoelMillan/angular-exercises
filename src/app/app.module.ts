@@ -7,8 +7,9 @@ import { PanelModule } from 'primeng/panel';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { ChartModule } from 'primeng/chart';
-import {AvatarModule} from 'primeng/avatar';
-import {AvatarGroupModule} from 'primeng/avatargroup';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
+import { TableModule } from 'primeng/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Ejercicio1Component } from './components/ejercicio1/ejercicio1.component';
 import { Ejercicio2Component } from './components/ejercicio2/ejercicio2.component';
@@ -16,6 +17,7 @@ import { Ejercicio3Component } from './components/ejercicio3/ejercicio3.componen
 import { Ejercicio4Component } from './components/ejercicio4/ejercicio4.component';
 import { Ejercicio5Component } from './components/ejercicio5/ejercicio5.component';
 import { Ejercicio6Component } from './components/ejercicio6/ejercicio6.component';
+import { Ejercicio7Component } from './components/ejercicio7/ejercicio7.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { Ejercicio6Component } from './components/ejercicio6/ejercicio6.componen
     Ejercicio3Component,
     Ejercicio4Component,
     Ejercicio5Component,
-    Ejercicio6Component
+    Ejercicio6Component,
+    Ejercicio7Component
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import { Ejercicio6Component } from './components/ejercicio6/ejercicio6.componen
     AvatarModule,
     AvatarGroupModule,
     ChartModule,
+    TableModule,
     AppRoutingModule
   ],
   providers: [],
