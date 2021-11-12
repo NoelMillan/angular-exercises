@@ -11,6 +11,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { TableModule } from 'primeng/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PaginatorModule } from 'primeng/paginator';
 import { Ejercicio1Component } from './components/ejercicio1/ejercicio1.component';
 import { Ejercicio2Component } from './components/ejercicio2/ejercicio2.component';
 import { Ejercicio3Component } from './components/ejercicio3/ejercicio3.component';
@@ -39,6 +40,7 @@ import { Ejercicio7Component } from './components/ejercicio7/ejercicio7.componen
     AvatarModule,
     AvatarGroupModule,
     ChartModule,
+    PaginatorModule,
     TableModule,
     AppRoutingModule
   ],

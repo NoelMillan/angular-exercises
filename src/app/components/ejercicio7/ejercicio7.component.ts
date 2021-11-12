@@ -8,41 +8,65 @@ import { Component, OnInit } from '@angular/core';
 export class Ejercicio7Component implements OnInit {
 
   products = [
-    {"id":1,"code":"0591-3753","name":"Lotlux","description":"Pramipexole Dihydrochloride","price":755,"quantity":107,"state":"SUPER ORIGIN CC","category":"Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate and Amphetamine Sulfate","img":"Alprazolam","point":4},
-    {"id":2,"code":"50436-6301","name":"Zontrax","description":"Bromday","price":298,"quantity":134,"state":"PENNSAID","category":"Sore Throat Spray Cherry","img":"CLE DE PEAU BEAUTE SILKY FOUNDATION I","point":6},
-    {"id":3,"code":"53145-319","name":"Regrant","description":"Hongocura","price":441,"quantity":190,"state":"Leader Nasal","category":"Oxymorphone Hydrochloride","img":"Western FAMILY","point":4},
-    {"id":4,"code":"36000-045","name":"Alpha","description":"Levofloxacin","price":504,"quantity":92,"state":"Ibuprofen","category":"FRAICHEUR THE VERT ANTIPERSPIRANT AND DEODORANT ROLL-ON","img":"Haloperidol","point":9},
-    {"id":5,"code":"37808-536","name":"Pannier","description":"bacitracin","price":140,"quantity":54,"state":"Povidone Iodine Impregnated","category":"Epirubicin Hydrochloride","img":"Bladder - Kidney","point":10},
-    {"id":6,"code":"64117-229","name":"Lotlux","description":"SKIN ERUPTIONS RUNNY NOSE","price":966,"quantity":10,"state":"Stavudine","category":"Gemcitabine Hydrochloride","img":"Serdaen","point":5},
-    {"id":7,"code":"24385-072","name":"Trippledex","description":"GNP Caldyphen","price":297,"quantity":55,"state":"Equaline all day allergy","category":"Ibuprofen","img":"SINEMET","point":6},
-    {"id":8,"code":"44911-0124","name":"Redhold","description":"Trauma plus Gel","price":742,"quantity":155,"state":"Cepacol","category":"Gabapentin","img":"Amoxicillin","point":9},
-    {"id":9,"code":"45802-897","name":"Cardguard","description":"ibuprofen","price":27,"quantity":27,"state":"Atenolol","category":"Metformin Hydrochloride","img":"Red Maple","point":3},
-    {"id":10,"code":"68645-424","name":"Otcom","description":"Sertraline Hydrochloride","price":987,"quantity":74,"state":"Effervescent Cold Relief","category":"Gabapentin","img":"Ocean Potion Water Sport SPF50 Sunscreen","point":1},
-    {"id":11,"code":"16864-012","name":"Vagram","description":"Kerasal PF-10","price":872,"quantity":199,"state":"Risperidone","category":"Mucor plumbeus","img":"Gabapentin","point":10},
-    {"id":12,"code":"0591-3499","name":"Stim","description":"Modafinil","price":261,"quantity":119,"state":"Metipranolol","category":"Sephora Super Lisseur Rides SPF 15 Age Defy Moisture","img":"Butalbital, Aspirin and Caffeine","point":10},
-    {"id":13,"code":"67938-1472","name":"Prodder","description":"Eight Hour Cream Lip Protectant Sheer Tint SPF 15 Berry","price":450,"quantity":127,"state":"Ontak","category":"Good Sense Stomach Relief","img":"Hydrocortisone","point":2},
-    {"id":14,"code":"11822-0449","name":"Biodex","description":"Junior Pain Relief","price":733,"quantity":120,"state":"Lycopodium Berberis","category":"Effexor","img":"Monistat 1 Combination Pack","point":8},
-    {"id":15,"code":"36800-218","name":"Toughjoyfax","description":"Clear Anti Itch","price":106,"quantity":167,"state":"Omeprazole","category":"PredniSONE","img":"Epsom Salt","point":5},
-    {"id":16,"code":"51435-002","name":"Keylex","description":"NEUTRACETT","price":224,"quantity":37,"state":"Olay Total Effects Pore Minimizing CC","category":"Hectorol","img":"Chloroquine","point":9},
-    {"id":17,"code":"36987-2347","name":"Bitchip","description":"Para Grass Pollen","price":739,"quantity":74,"state":"PredniSONE","category":"COMPLERA","img":"LA MER THE REPARATIVE BODY SUN Broad Spectrum SPF 30","point":6},
-    {"id":18,"code":"54868-0091","name":"Bamity","description":"Haloperidol","price":538,"quantity":79,"state":"TIAZAC","category":"CENTER-AL - ATRIPLEX WRIGHTII POLLEN","img":"Minivelle","point":5},
-    {"id":19,"code":"41190-686","name":"Andalax","description":"citroma","price":553,"quantity":43,"state":"Metformin Hydrochloride","category":"Hemorrhoid Complex","img":"Magnesium carbonicum 6","point":3},
-    {"id":20,"code":"37000-733","name":"Alphazap","description":"Nioxin Scalp Recovery","price":206,"quantity":33,"state":"Penicilium chrysogenum","category":"Estradiol","img":"Divalproex Sodium","point":1},
-    {"id":21,"code":"0168-0273","name":"Matsoft","description":"Bacitracin Zinc and Polymyxin B Sulfate","price":544,"quantity":151,"state":"Arnica Plus","category":"PERIPLANETA AMERICANA","img":"Miracle Pain Cream","point":1},
-    {"id":22,"code":"10812-606","name":"It","description":"Neutrogena Shine Control Makeup","price":630,"quantity":95,"state":"Proleukin","category":"ASPIRIN LOW DOSE CHEWABLE","img":"Lovastatin","point":3},
-    {"id":23,"code":"54868-2930","name":"Holdlamis","description":"Alprazolam","price":426,"quantity":117,"state":"HYDROCODONE BITARTRATE AND ACETAMINOPHEN","category":"Sulfamethoxazole and Trimethoprim","img":"Eczemin","point":3},
-    {"id":24,"code":"76420-795","name":"Sonair","description":"Dyural LM Kit","price":949,"quantity":31,"state":"CYZONE","category":"Candesartan cilexetil","img":"Mitomycin","point":10},
-    {"id":25,"code":"68645-488","name":"Cardify","description":"Sertraline Hydrochloride","price":403,"quantity":72,"state":"Armour Thyroid","category":"Ketoconazole","img":"Cuprum aceticum Zincum valerianicum","point":5},
-    {"id":26,"code":"68151-3063","name":"Stronghold","description":"Nephron FA","price":227,"quantity":143,"state":"PanOxyl","category":"Amlodipine Besylate and Benazepril Hydrochloride","img":"Ferrum silicicum Urtica","point":4},
-    {"id":27,"code":"63739-546","name":"Home Ing","description":"Risperidone","price":332,"quantity":34,"state":"Old Spice Original","category":"BRYONIA ALBA","img":"Stratuscare Adult Glycerin","point":4},
-    {"id":28,"code":"64117-810","name":"Viva","description":"Colds Yellow Mucous","price":421,"quantity":190,"state":"RAYOS","category":"Panatuss","img":"Academy Sports Outdoors SUNSCREEN CONTINUOUS BROAD SPECTRUM SPF 50 Water-Resistant","point":2},
-    {"id":29,"code":"55154-4979","name":"Flexidy","description":"Alprazolam","price":587,"quantity":51,"state":"Lien Cichorium","category":"LBEL divine lip gloss SPF 15","img":"shoprite day calm severe","point":7},
-    {"id":30,"code":"68016-378","name":"Y-find","description":"Gas Relief","price":831,"quantity":139,"state":"Tolterodine Tartrate","category":"ESSENTIAL SOLUTION COENZYME Q10 MASK SHEET","img":"Gabapentin","point":9}
+    {"id":1000,"code":"f230fh0g3","name":"Bamboo Watch","description":"Product Description","price":65,"quantity":24,"state":"INSTOCK","category":"	Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/bamboo-watch.jpg","point":5},
+    {"id":1001,"code":"nvklal433","name":"Black Watch","description":"Product Description","price":72,"quantity":61,"state":"INSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/black-watch.jpg","point":4},
+    {"id":1002,"code":"zz21cz3c1","name":"Blue Band","description":"Product Description","price":79,"quantity":2,"state":"LOWSTOCK","category":"Fitness","img":"https://blissful-banach-2d121d.netlify.app/assets/img/blue-band.jpg","point":3},
+    {"id":1003,"code":"244wgerg2","name":"Blue T-Shirt","description":"Product Description","price":29,"quantity":25,"state":"INSTOCK","category":"Clothing","img":"https://blissful-banach-2d121d.netlify.app/assets/img/blue-t-shirt.jpg","point":5},
+    {"id":1004,"code":"h456wer53","name":"Bracelet","description":"Product Description","price":15,"quantity":73,"state":"INSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/bracelet.jpg","point":4},
+    {"id":1005,"code":"av2231fwg","name":"Brown Purse","description":"Product Description","price":120,"quantity":0,"state":"OUTOFSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/brown-purse.jpg","point":4},
+    {"id":1006,"code":"bib36pfvm","name":"Chakra Bracelet","description":"Product Description","price":32,"quantity":5,"state":"LOWSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/chakra-bracelet.jpg","point":3},
+    {"id":1007,"code":"mbvjkgip5","name":"Galaxy Earrings","description":"Product Description","price":34,"quantity":23,"state":"INSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/galaxy-earrings.jpg","point":5},
+    {"id":1008,"code":"vbb124btr","name":"Game Controller","description":"Product Description","price":99,"quantity":2,"state":"LOWSTOCK","category":"Electronics","img":"https://blissful-banach-2d121d.netlify.app/assets/img/game-controller.jpg","point":4},
+    {"id":1009,"code":"cm230f032","name":"Gaming Set","description":"Product Description","price":299,"quantity":63,"state":"INSTOCK","category":"Electronics","img":"https://blissful-banach-2d121d.netlify.app/assets/img/gaming-set.jpg","point":3},
+    {"id":1010,"code":"f230fh0g3","name":"Bamboo Watch","description":"Product Description","price":65,"quantity":24,"state":"INSTOCK","category":"	Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/bamboo-watch.jpg","point":5},
+    {"id":1011,"code":"nvklal433","name":"Black Watch","description":"Product Description","price":72,"quantity":61,"state":"INSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/black-watch.jpg","point":4},
+    {"id":1012,"code":"zz21cz3c1","name":"Blue Band","description":"Product Description","price":79,"quantity":2,"state":"LOWSTOCK","category":"Fitness","img":"https://blissful-banach-2d121d.netlify.app/assets/img/blue-band.jpg","point":3},
+    {"id":1013,"code":"244wgerg2","name":"Blue T-Shirt","description":"Product Description","price":29,"quantity":25,"state":"INSTOCK","category":"Clothing","img":"https://blissful-banach-2d121d.netlify.app/assets/img/blue-t-shirt.jpg","point":5},
+    {"id":1014,"code":"h456wer53","name":"Bracelet","description":"Product Description","price":15,"quantity":73,"state":"INSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/bracelet.jpg","point":4},
+    {"id":1015,"code":"av2231fwg","name":"Brown Purse","description":"Product Description","price":120,"quantity":0,"state":"OUTOFSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/brown-purse.jpg","point":4},
+    {"id":1016,"code":"bib36pfvm","name":"Chakra Bracelet","description":"Product Description","price":32,"quantity":5,"state":"LOWSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/chakra-bracelet.jpg","point":3},
+    {"id":1017,"code":"mbvjkgip5","name":"Galaxy Earrings","description":"Product Description","price":34,"quantity":23,"state":"INSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/galaxy-earrings.jpg","point":5},
+    {"id":1018,"code":"vbb124btr","name":"Game Controller","description":"Product Description","price":99,"quantity":2,"state":"LOWSTOCK","category":"Electronics","img":"https://blissful-banach-2d121d.netlify.app/assets/img/game-controller.jpg","point":4},
+    {"id":1019,"code":"cm230f032","name":"Gaming Set","description":"Product Description","price":299,"quantity":63,"state":"INSTOCK","category":"Electronics","img":"https://blissful-banach-2d121d.netlify.app/assets/img/gaming-set.jpg","point":3},
+    {"id":1020,"code":"f230fh0g3","name":"Bamboo Watch","description":"Product Description","price":65,"quantity":24,"state":"INSTOCK","category":"	Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/bamboo-watch.jpg","point":5},
+    {"id":1021,"code":"nvklal433","name":"Black Watch","description":"Product Description","price":72,"quantity":61,"state":"INSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/black-watch.jpg","point":4},
+    {"id":1022,"code":"zz21cz3c1","name":"Blue Band","description":"Product Description","price":79,"quantity":2,"state":"LOWSTOCK","category":"Fitness","img":"https://blissful-banach-2d121d.netlify.app/assets/img/blue-band.jpg","point":3},
+    {"id":1023,"code":"244wgerg2","name":"Blue T-Shirt","description":"Product Description","price":29,"quantity":25,"state":"INSTOCK","category":"Clothing","img":"https://blissful-banach-2d121d.netlify.app/assets/img/blue-t-shirt.jpg","point":5},
+    {"id":1024,"code":"h456wer53","name":"Bracelet","description":"Product Description","price":15,"quantity":73,"state":"INSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/bracelet.jpg","point":4},
+    {"id":1025,"code":"av2231fwg","name":"Brown Purse","description":"Product Description","price":120,"quantity":0,"state":"OUTOFSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/brown-purse.jpg","point":4},
+    {"id":1026,"code":"bib36pfvm","name":"Chakra Bracelet","description":"Product Description","price":32,"quantity":5,"state":"LOWSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/chakra-bracelet.jpg","point":3},
+    {"id":1027,"code":"mbvjkgip5","name":"Galaxy Earrings","description":"Product Description","price":34,"quantity":23,"state":"INSTOCK","category":"Accessories","img":"https://blissful-banach-2d121d.netlify.app/assets/img/galaxy-earrings.jpg","point":5},
+    {"id":1028,"code":"vbb124btr","name":"Game Controller","description":"Product Description","price":99,"quantity":2,"state":"LOWSTOCK","category":"Electronics","img":"https://blissful-banach-2d121d.netlify.app/assets/img/game-controller.jpg","point":4},
+    {"id":1029,"code":"cm230f032","name":"Gaming Set","description":"Product Description","price":299,"quantity":63,"state":"INSTOCK","category":"Electronics","img":"https://blissful-banach-2d121d.netlify.app/assets/img/gaming-set.jpg","point":3},
   ]
+
+  first = 0;
+
+  rows = 10;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  next() {
+    this.first = this.first + this.rows;
+}
+
+prev() {
+    this.first = this.first - this.rows;
+}
+
+reset() {
+    this.first = 0;
+}
+
+isLastPage(): boolean {
+    return this.products ? this.first === (this.products.length - this.rows): true;
+}
+
+isFirstPage(): boolean {
+    return this.products ? this.first === 0 : true;
+}
 
 }
