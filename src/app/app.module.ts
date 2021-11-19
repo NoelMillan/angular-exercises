@@ -19,6 +19,7 @@ import { Ejercicio4Component } from './components/ejercicio4/ejercicio4.componen
 import { Ejercicio5Component } from './components/ejercicio5/ejercicio5.component';
 import { Ejercicio6Component } from './components/ejercicio6/ejercicio6.component';
 import { Ejercicio7Component } from './components/ejercicio7/ejercicio7.component';
+import { Ejercicio8Component } from './components/ejercicio8/ejercicio8.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { Ejercicio7Component } from './components/ejercicio7/ejercicio7.componen
     Ejercicio4Component,
     Ejercicio5Component,
     Ejercicio6Component,
-    Ejercicio7Component
+    Ejercicio7Component,
+    Ejercicio8Component
   ],
   imports: [
     BrowserModule,

@@ -3,20 +3,26 @@
 }
 .button{
     margin: 1em;
+    color: black !important;
 }
-.button:nth-child(4){
+.button-green{
     border-color: #90ee90;
     background-color: #90ee90;
 }
-.button:nth-child(5){
-    border-color: #90ee90;
-    background-color: #90ee90;
+.button-green:hover{
+    border-color: #82d882;
+    background-color: #82d882;
 }
-.button:nth-child(6){
-    border-color: #90ee90;
-    background-color: #90ee90;
-}
-.button:nth-child(7){
+.button-blue{
     border-color: #add8e6;
     background-color: #add8e6;
+}
+.button-blue:hover{
+    border-color: #9dc7d4;
+    background-color: #9dc7d4;
+}
+.p-button:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem #ffe69c !important;
 }
